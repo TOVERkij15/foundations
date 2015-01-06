@@ -40,6 +40,58 @@ meta.foundation-mq-xxlarge {
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
+  .header {
+    text-align:center;
+    font-size:20px;
+    height:400px;
+    
+    /*padding: 5px 0 0 0;
+    width: 20%;
+    height: 500px;
+    background-color: #ff0000;
+   
+    opacity: 0.5;*/
+}
+
+/***************************
+NAVIGATION
+***************************/
+nav {
+    background: white;
+    height: 120px;
+    width: 100%;
+    margin-top: 0;
+
+    h1 {
+        color: black;
+    }
+
+    
+    ul {
+        margin: 0;
+    }
+
+    img {
+        padding-top: 20px;
+        width: 100px;
+        height:100px;
+    }
+    
+    li {
+        list-style: none;
+        float:right;
+        margin-right: 30px; 
+        padding-top: 40px;
+    }
+
+    a {
+        color: black;
+        font: 16px 'MuseoSlab500Regular', arial, helvetica, sans-serif;
+
+    }
+}
+
+
 html, body {
   height: 100%; }
 
@@ -55,11 +107,17 @@ body {
   font-size: 100%; }
 
 body {
-  background: #fff;
+  background: radial-gradient(rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0.8) 0%),
+    radial-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 0%),url("http://wallpaperswa.com/download/view?resolution=2560x1600&file=MjU2MHgxNjAwLzIwMTIwNDE5L2Fic3RyYWN0IGJsYWNrIGJsb2NrcyBzaGFwZXMgbW9ub2Nocm9tZSBtb2Rlcm4gMjU2MHgxNjAwIHdhbGxwYXBlcl93YWxscGFwZXJzd2EuY29tXzMuanBn&name=YWJzdHJhY3RfYmxhY2tfYmxvY2tzX3NoYXBlc19tb25vY2hyb21lX21vZGVybl8yNTYweDE2MDBfd2FsbHBhcGVy") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 16px 'MuseoSlab500Regular', arial, helvetica, sans-serif;
   color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -124,7 +182,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5em; }
+  max-width: 100%; }
   .row:before, .row:after {
     content: " ";
     display: table; }
